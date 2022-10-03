@@ -1,22 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-
-namespace oefening3
+﻿// See https://aka.ms/new-console-template for more information
+namespace mijnApp
 {
-    internal static class Program
+    public class oefening3
     {
-        /// <summary>
-        /// The main entry point for the application.
-        /// </summary>
-        [STAThread]
-        static void Main()
+        public static void Main(String[] args)
         {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new IsItBigger());
+            for (int i = 0; i < 100; i++)
+            {
+                int resultaat = i * 7; 
+                Console.WriteLine(resultaat);
+
+                if (resultaat >= 546)
+                {
+                    break;
+                }
+            }
         }
     }
 }
